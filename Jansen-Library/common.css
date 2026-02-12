@@ -1,81 +1,52 @@
-/* Shared Styles - Used by all pages */
-* {
+body {
+    font-family: "Times New Roman", Times, serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background: #f5f5f5;
     color: #333;
-    background-color: #f9f9f9;
-}
-
-header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    min-height: calc(100vh - 300px);
-}
-
-footer {
-    background-color: #2c3e50;
+  }
+  
+  header {
+    background: #333;
     color: white;
     text-align: center;
-    padding: 1.5rem;
-    margin-top: 3rem;
-}
+    padding: 2rem;
+  }
+  
+  .highlight {
+    color: yellow;
+  }
+   
+  main {
+    color: purple;
+    text-align: center;
+    padding: 2rem;
+  }
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 1rem;
-        width: 100%;
-        text-align: center;
-    }
-
-    main {
-        padding: 1rem;
-    }
-}
+  nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .content {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+  }
